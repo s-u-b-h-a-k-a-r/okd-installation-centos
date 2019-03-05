@@ -1,0 +1,1 @@
+# okd-installation-centos
