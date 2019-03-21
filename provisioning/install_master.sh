@@ -46,4 +46,4 @@ echo "*"
 echo "$ oc login -u ${OKD_USERNAME} -p ${OKD_PASSWORD} https://console.$DOMAIN:$API_PORT/"
 echo "#####################################################################"
 
-oc login -u ${OPENSHIFT_USERNAME} -p ${OPENSHIFT_PASSWORD} https://console.$DOMAIN:$API_PORT/
+oc login -u ${OKD_USERNAME} -p ${OKD_PASSWORD} https://console.$DOMAIN:$API_PORT/

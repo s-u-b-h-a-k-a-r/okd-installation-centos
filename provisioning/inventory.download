@@ -4,17 +4,17 @@ nodes
 etcd
 
 [masters]
-${OPENSHIFT_MASTER_IP} openshift_ip=${OPENSHIFT_MASTER_IP} openshift_schedulable=true 
+${OKD_MASTER_IP} openshift_ip=${OKD_MASTER_IP} openshift_schedulable=true 
 
 [etcd]
-${OPENSHIFT_MASTER_IP} openshift_ip=${OPENSHIFT_MASTER_IP}
+${OKD_MASTER_IP} openshift_ip=${OKD_MASTER_IP}
 
 [nodes]
-${OPENSHIFT_MASTER_IP} openshift_ip=${OPENSHIFT_MASTER_IP} openshift_node_group_name='node-config-master'
-${OPENSHIFT_WORKER_NODE_1_IP} openshift_ip=${OPENSHIFT_WORKER_NODE_1_IP} openshift_node_group_name='node-config-compute'
-${OPENSHIFT_WORKER_NODE_2_IP} openshift_ip=${OPENSHIFT_WORKER_NODE_2_IP} openshift_node_group_name='node-config-compute'
-${OPENSHIFT_WORKER_NODE_3_IP} openshift_ip=${OPENSHIFT_WORKER_NODE_3_IP} openshift_node_group_name='node-config-compute'
-${OPENSHIFT_INFRA_NODE_1_IP} openshift_ip=${OPENSHIFT_INFRA_NODE_1_IP} openshift_node_group_name='node-config-infra'
+${OKD_MASTER_IP} openshift_ip=${OKD_MASTER_IP} openshift_node_group_name='node-config-master'
+${OKD_WORKER_NODE_1_IP} openshift_ip=${OKD_WORKER_NODE_1_IP} openshift_node_group_name='node-config-compute'
+${OKD_WORKER_NODE_2_IP} openshift_ip=${OKD_WORKER_NODE_2_IP} openshift_node_group_name='node-config-compute'
+${OKD_WORKER_NODE_3_IP} openshift_ip=${OKD_WORKER_NODE_3_IP} openshift_node_group_name='node-config-compute'
+${OKD_INFRA_NODE_1_IP} openshift_ip=${OKD_INFRA_NODE_1_IP} openshift_node_group_name='node-config-infra'
 
 [OSEv3:vars]
 openshift_additional_repos=[{'id': 'centos-paas', 'name': 'centos-paas', 'baseurl' :'https://buildlogs.centos.org/centos/7/paas/x86_64/openshift-origin311', 'gpgcheck' :'0', 'enabled' :'1'}]
