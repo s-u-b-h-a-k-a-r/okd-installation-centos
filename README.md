@@ -4,7 +4,8 @@
 # okd-installation-centos
 
 ![enter image description here](https://lh3.googleusercontent.com/OBGT85EIBjT43vxUsI0Pmhl68NmYxqOUbBuTjRivjP24t5r38ft0ioTNuEV0IAyV3izoadJsdYIlnw)
-## About...
+
+# About...
 
   
 
@@ -12,9 +13,9 @@
  
   
 
-## Table of Contents
+# Table of Contents
 
-* [What are the pre-requisites ?](#pre-requisites)
+* [What are the pre-requisites ?](#prerequisites)
 * [What are the VM's provisioned ?](#configuration)
 * [How to deploy okd cluster ?](#deploy)
 * [How to access okd Console ?](#console)
@@ -23,15 +24,15 @@
   
   
 
-<a id="pre-requisites"></a>
+<a id="prerequisites"></a>
 
-## What are the pre-requisites ?
+# What are the prerequisites ?
 * [Git](https://git-scm.com/downloads "Git")
 
    
 <a id="configuration"></a>
 
-## What are the VM's provisioned ?
+# What are the VM's provisioned ?
 
 ***Note: We are not going to create any VM's during this process. User is expected to have VM's before proceeding with this repository***
 
@@ -50,7 +51,7 @@
 
 <a id="deploy"></a>
 
-## How to deploy openshift cluster ?
+# How to deploy openshift cluster ?
 
 
 ## ***Step 1***
@@ -197,7 +198,7 @@
   
   <a id="console"></a>
 
-## How to access okd Console ?
+# How to access okd Console ?
 
 The ***okd Console*** can be accessed via the below URL from your local machine   
 
@@ -205,6 +206,6 @@ The ***okd Console*** can be accessed via the below URL from your local machine
 
 
 <a id="addons"></a>
-## What are the addons provided ?
+# What are the addons provided ?
 
 * `helm`
